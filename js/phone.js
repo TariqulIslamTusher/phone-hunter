@@ -12,12 +12,12 @@ const displayPhones = (phones, limit) => {
     phoneContainer.innerHTML = ''
 
     // phones slicing 
-    if (limit == 5 && phones.length > 5) {
-        phones = phones.slice(0, 5)
+    if (limit == 5 && phones.length > 4) {
+        phones = phones.slice(0, 4)
         document.getElementById('showMore').classList.remove('d-none')
     }
-    else if (limit == 10 && phones.length > 6) {
-        phones = phones.slice(0, 10)
+    else if (limit == 10 && phones.length > 8) {
+        phones = phones.slice(0, 8)
         document.getElementById('showMore').classList.add('d-none')
         document.getElementById('showMore2').classList.remove('d-none')
     }
